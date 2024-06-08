@@ -16,7 +16,7 @@ public class Main {
                 new Hogwarts("Падма Патил", Hogwarts.randomDiceNumber(), Hogwarts.randomDiceNumber()),
                 new Hogwarts("Маркус Белби", Hogwarts.randomDiceNumber(), Hogwarts.randomDiceNumber())
         };
-        Gryffindor [] gryffindors = {
+        Gryffindor[] gryffindors = {
                 new Gryffindor("Гарри Поттер", Hogwarts.randomDiceNumber(), Hogwarts.randomDiceNumber(),
                         Hogwarts.randomDiceNumber(), Hogwarts.randomDiceNumber(), Hogwarts.randomDiceNumber()),
                 new Gryffindor("Гермиона Грейнджер", Hogwarts.randomDiceNumber(), Hogwarts.randomDiceNumber(),
@@ -35,7 +35,7 @@ public class Main {
                         Hogwarts.randomDiceNumber(), Hogwarts.randomDiceNumber(), Hogwarts.randomDiceNumber(),
                         Hogwarts.randomDiceNumber(), Hogwarts.randomDiceNumber())
         };
-        Hufflepuff [] hufflepuffs = {
+        Hufflepuff[] hufflepuffs = {
                 new Hufflepuff("Захария Смит", Hogwarts.randomDiceNumber(), Hogwarts.randomDiceNumber(),
                         Hogwarts.randomDiceNumber(), Hogwarts.randomDiceNumber(), Hogwarts.randomDiceNumber()),
                 new Hufflepuff("Седрик Диггори", Hogwarts.randomDiceNumber(), Hogwarts.randomDiceNumber(),
@@ -43,7 +43,7 @@ public class Main {
                 new Hufflepuff("Джастин Финч-Флетчли", Hogwarts.randomDiceNumber(), Hogwarts.randomDiceNumber(),
                         Hogwarts.randomDiceNumber(), Hogwarts.randomDiceNumber(), Hogwarts.randomDiceNumber())
         };
-        Ravenclaw [] ravenclaws = {
+        Ravenclaw[] ravenclaws = {
                 new Ravenclaw("Чжоу Чанг", Hogwarts.randomDiceNumber(), Hogwarts.randomDiceNumber(),
                         Hogwarts.randomDiceNumber(), Hogwarts.randomDiceNumber(), Hogwarts.randomDiceNumber()),
                 new Ravenclaw("Падма Патил", Hogwarts.randomDiceNumber(), Hogwarts.randomDiceNumber(),
@@ -52,10 +52,11 @@ public class Main {
                         Hogwarts.randomDiceNumber(), Hogwarts.randomDiceNumber(), Hogwarts.randomDiceNumber())
 
         };
-        for (int i = 0; i < hogwarts.length; i++) {
-            System.out.println(hogwarts[i]);
 
-        }
+        Methods method = new Methods();
+        method.print(gryffindors);
+
     }
 }
+
 
