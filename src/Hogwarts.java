@@ -56,4 +56,7 @@ public class Hogwarts {
                 ", transgression=" + transgression +
                 '}';
     }
+    public static int randomDiceNumber(){
+        return (int) (Math.random()*100);
+    }
 }
