@@ -44,17 +44,20 @@ public class Main {
                         Hogwarts.randomDiceNumber(), Hogwarts.randomDiceNumber(), Hogwarts.randomDiceNumber())
         };
         Ravenclaw[] ravenclaws = {
-                new Ravenclaw("Чжоу Чанг", Hogwarts.randomDiceNumber(), Hogwarts.randomDiceNumber(),
+                new Ravenclaw("Чжоу Чанг", Hogwarts.randomDiceNumber(), Hogwarts.randomDiceNumber(), Hogwarts.randomDiceNumber(),
                         Hogwarts.randomDiceNumber(), Hogwarts.randomDiceNumber(), Hogwarts.randomDiceNumber()),
-                new Ravenclaw("Падма Патил", Hogwarts.randomDiceNumber(), Hogwarts.randomDiceNumber(),
+                new Ravenclaw("Падма Патил", Hogwarts.randomDiceNumber(),  Hogwarts.randomDiceNumber(), Hogwarts.randomDiceNumber(),
                         Hogwarts.randomDiceNumber(), Hogwarts.randomDiceNumber(), Hogwarts.randomDiceNumber()),
-                new Ravenclaw("Маркус Белби", Hogwarts.randomDiceNumber(), Hogwarts.randomDiceNumber(),
+                new Ravenclaw("Маркус Белби",Hogwarts.randomDiceNumber(), Hogwarts.randomDiceNumber(), Hogwarts.randomDiceNumber(),
                         Hogwarts.randomDiceNumber(), Hogwarts.randomDiceNumber(), Hogwarts.randomDiceNumber())
 
         };
 
         Methods method = new Methods();
         method.print(gryffindors);
+        method.print(slytherins);
+        method.print(hufflepuffs);
+        method.print(ravenclaws);
 
     }
 }
