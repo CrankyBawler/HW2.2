@@ -58,6 +58,7 @@ public class Main {
         method.print(slytherins);
         method.print(hufflepuffs);
         method.print(ravenclaws);
+        System.out.println();
 
     }
 }

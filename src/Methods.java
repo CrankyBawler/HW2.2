@@ -35,4 +35,16 @@ public class Methods {
                     ravenclaw.getCreativity());
         }
     }
-    }
+
+    public void simileGryffindors(Gryffindor [] gryffindors, int i , int j) {
+       int  sumi = gryffindors[i].getNobility() + gryffindors[i].getHonor() + gryffindors [i].getBravery();
+       int sumj = gryffindors[j].getNobility() + gryffindors[j].getHonor() + gryffindors[j].getBravery();
+        if (sumi > sumj) {
+            System.out.println(gryffindors[i].getName() + " лучший гриффиндорец чем " + gryffindors[j].getName());
+        }else {
+            System.out.println(gryffindors[j].getName() + " лучший гриффиндорец чем " + gryffindors[i].getName());
+        }
+        }
+}
+
+
