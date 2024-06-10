@@ -59,6 +59,11 @@ public class Main {
         method.print(hufflepuffs);
         method.print(ravenclaws);
         System.out.println();
+        method.simileGryffindors(gryffindors,2,1);
+        method.simileSlytherin(slytherins, 0 , 2);
+        method.simileHufflepuff(hufflepuffs, 1, 2);
+        method.simileRavenclaw(ravenclaws, 2, 0);
+        method.simileHogwarts(hogwarts, 0, 1);
 
     }
 }
