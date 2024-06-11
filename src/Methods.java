@@ -80,27 +80,13 @@ public class Methods {
     }
 
     public void simileHogwarts(Hogwarts[] hogwarts, int i, int j) {
-        if (hogwarts[i].getMagic() > hogwarts[j].getMagic() && hogwarts[i].getTransgression() > hogwarts[j].getTransgression()) {
-            System.out.println(hogwarts[i].getName() + " обладает бОльшей мощностью магии и бОльшим расстоянием трансгрессии" +
-                    " чем " + hogwarts[j].getName());
-        }else {
-            if (hogwarts[i].getMagic() > hogwarts[j].getMagic() && hogwarts[i].getTransgression() < hogwarts[j].getTransgression()) {
-                System.out.println(hogwarts[i].getName() + " обладает бОльшей мощностью магии, но меньшим расстоянием трансгрессии" +
-                        " чем " + hogwarts[j].getName());
-            }
-            else {
-                if (hogwarts[i].getMagic() < hogwarts[j].getMagic() && hogwarts[i].getTransgression() < hogwarts[j].getTransgression()) {
-                    System.out.println(hogwarts[j].getName() + " обладает бОльшей мощностью магии и бОльшим расстоянием трансгрессии" +
-                            " чем " + hogwarts[i].getName());
-                }else {
-                    if (hogwarts[i].getMagic() < hogwarts[j].getMagic() && hogwarts[i].getTransgression() > hogwarts[j].getTransgression()) {
-                        System.out.println(hogwarts[j].getName() + " обладает бОльшей мощностью магии, но меньшеим расстоянием трансгрессии" +
-                                " чем " + hogwarts[i].getName());
-                    }
-                }
-            }
+        int sumi = hogwarts[i].getMagic() + hogwarts[i].getTransgression();
+        int sumj = hogwarts[j].getMagic() + hogwarts[j].getTransgression();
+        if (sumi > sumj) {
+            System.out.println(hogwarts[i].getName() + " обладает бОльшей мощностью магии чем " + hogwarts[j].getName());
+        } else {
+            System.out.println(hogwarts[j].getName() + " обладает бОльшей мощностью магии чем " + hogwarts[i].getName());
         }
+
     }
 }
-
-
